@@ -14,6 +14,12 @@ fun main(args: Array<String>) {
         list[0] + list[1]
     }
 
+    val possiblyNullString: String? = "who knows"
+
+    possiblyNullString?.let { definitelyNonNullString ->
+        println(definitelyNonNullString)
+    }
+
     val resultRun: Unit = "hello".run {
         println(this)
     }
